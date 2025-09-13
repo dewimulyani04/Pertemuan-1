@@ -1,0 +1,147 @@
+
+	CASTING
+	=======
+	-konversi antar type data numerik
+	-contoh : 
+			-dari float/double ke integer
+			-char ke int
+			dst...
+	-jenis casting
+	a. implicit casting / upcasting
+		-casting yang terjadi dari type data bit kecil ke bit besar, atau dari bilangan bulat ke bilangan pecahan
+		-casting jenis ini, terjadi secara otomatis dan kita tidak perlu melakukan apapun
+		CONTOH:
+		=======
+		int a=10;
+		double b=a; //---> ini disebut dengan implicit casting / upcasting
+		
+
+	b. explicit casting / down casting
+		-casting yang terjadi dari type data bit besar ke bit kecil, atau dari floating point ke integer		
+		-casting jenis ini , harus dilakukan secara manual
+
+		CONTOH:
+		=======
+		double a=10.0;
+		float b=a; //--> ini akan error
+		float b=(float)a;
+
+	METHOD
+	======
+	-di dalam bahasa PHP method sering disebut dengan function
+	-di dalam bahasa PASCAL/DELPHI/BASIC method sering disebut dengan 
+         function/procedure
+	-secara umum, method sering juga disebut dengan "sub program" / "module"
+	-adalah block code, punya nama, bisa menerima parameter, bisa di panggil
+         untuk melakukan spesifik task (tugas khusus)
+	-jenis method di dalam java:
+	a. void method (di dalam bahasa BASIC/PASCAL disebut dengan "PROCEDURE")
+		-adalah method yang TIDAK mempunyai nilai balik (return value)
+		-jika di panggil, dia hanya menjalankan task-nya , setelah itu selesai
+		contohnya, method main, nulisnya = public static void main (String[]args){							
+
+						   }
+
+	b. non void method (di dalam bahasa BASIC/PASCAL disebut dengan "FUNCTION")
+		-adalah method yang mempunyai nilai balik (return value)
+		-jika dipanggil, setelah dia menjalankan task-nya, dia akan mengembalikan sebuah nilai,
+		dan nilai ini bisa:
+			1. di masukkan ke variabel
+			2. dijadikan parameter untuk pemanggilan method yang lain
+
+	OVERLOADING
+	===========
+		- kita boleh membuat beberapa method dalam suatu class dengan nama yang sama persis, tetapi harus:
+		a. beda type data parameter
+		b. ATAU beda jumlah parameter
+		c. ATAU beda posisi (tipe data) parameter
+
+	OVERRIDING/OVERRIDE :
+	Teknik dimana terdapat suatu superclass/classinduk yang memiliki method dimana method pada super class tersebut juga dibuat
+	pada subclass2 yang di extends terhadap superclass dengan diberi nama sama persis dengan method yang ada pada superclass.
+
+
+
+	DESAIN APLIKASI BEST PRACTICE
+	=============================
+		-ada 1 class Utama (di dalamnya ada main method)
+		-ada banyak class lain yang berfungsi sebagai Library
+
+
+	PACKAGE
+	=======
+	-mekanisme pengaturan folder di dalam java untuk management letak source code
+	-penamaan package, disarankan menggunakan nama domain institusi, dalam posisi terbalik.
+	CONTOH:
+		smkna.sch.id ---> nama package : id.sch.smkna
+
+	- di dalam sebuah file .java BOLEH ada banyak import statement	
+	- di dalam sebuah file .java HANYA BOLEH ada 1 package statement, dan HARUS baris paling atas
+	-jika kita melakukan import sebuah package, maka hanya File.java saja terimport, folder di dalamnya tidak ikut 	ter-import
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
